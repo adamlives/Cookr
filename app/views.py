@@ -3,9 +3,7 @@ import sqlite3
 from contextlib import closing
 from app import app
 
-
-DATABASE = '/home/adam/Documents/Python/Cookr/app/Cooking.db'
-
+app.config.from_object('config')
 
 def connect_db():
     return sqlite3.connect(DATABASE)

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>What would you like to do today?</h2>
+<table>
+    <tr>
+        <th>Food</th><th>Recipes</th>
+    </tr>
+    <tr>
+        <td><a href="/add_food" class="btn btn-default">Add a food</a></td>
+        <td><a href="/add_recipe" class="btn btn-default">Add a recipe</a></td>
+    </tr>
+    <tr>
+        <td><a href="/edit_foods" class="btn btn-default">Edit foods</a></td>
+        <td><a href="/edit_recipe" class="btn btn-default">Edit a recipe</a></td>
+    </tr>
+    <tr>
+        <td><a href="/view_foods" class="btn btn-default">View all foods</a></td>
+        <td><a href="/add_ingredients" class="btn btn-default">Add ingredients to a recipe</a></td>
+    </tr>
+    <tr>
+        <td></td><td><a href="/view_recipes" class="btn btn-default">View all recipes</a></td>
+    </tr>
+</table>
+{% endblock %}

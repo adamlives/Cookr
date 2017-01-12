@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Here are all the recipes in the database:</h2>
+<div class="row">
+    <div class="col-md-6">
+    <table class="table">
+    <thead>
+    <th>Recipe</th><th>Description</th><th>Instructions</th>
+    </thead>
+    <tbody>
+  {% for entry in entries %}
+    <tr><td>{{ entry.name }}</td><td>{{ entry.description }}</td><td>{{ entry.instructions }}</td></tr>
+  {% else %}
+    <em>Unbelievable. No recipes entered so far</em>
+  {% endfor %}
+  </tbody>
+  </table>
+  </div>
+</div>
+{% endblock %}

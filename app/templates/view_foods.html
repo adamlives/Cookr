@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Here are all the foods in the database:</h2>
+<div class="row">
+    <div class="col-md-6">
+        <table class="table">
+            <thead>
+            <th>Food Name</th><th>Food Group</th>
+            </thead>
+            <tbody>
+                    {% for entry in entries %}
+                <tr><td>{{ entry.name }}</td><td>{{ entry.group }}</tr>
+                    {% else %}
+                <em>Unbelievable. No foods entered so far</em>
+                    {% endfor %}
+            </tbody>
+            </table>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>What would you like to do today?</h2>
+<ul>
+    <li><a href="/Add_food">Add a food</a></li>
+    <li><a href="/Edit_foods">Edit foods</a></li>
+    <li><a href="/View_foods">View all foods</a></li>
+    <li><a href="/Add_recipe">Add a recipe</a></li>
+    <li><a href="/Edit_recipe">Edit a recipe</a></li>
+    <li><a href="/Add_ingredients">Add ingredients to a recipe</a></li>
+    <li><a href="/View_recipes">View all recipes</a></li>
+</ul>
+{% endblock %}

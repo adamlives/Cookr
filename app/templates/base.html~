@@ -1,0 +1,10 @@
+<html>
+    <head>
+	<title>{{ title }}: the recipe app</title>
+    </head>
+    <body>
+	<div>Cookr: <a href="/index">Home<a/></div>
+	{% block content %}{% end block %}
+    </body>
+</html>
+
